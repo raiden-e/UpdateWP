@@ -57,7 +57,7 @@ def main():
         f"{'PayPal worth:':<18}" + b(get_open('PYPL')),
         f"{'Apple worth:':<18}" + b(get_open('AAPL')),
         f"{'Forecast:':<18}" + get_weather(),
-        f"{'Refreshed:':<18}" + str(datetime.datetime.now().strftime("%H:%M:%S"))
+        f"{'Refreshed:':<18}" + str(datetime.datetime.now().strftime("%d.%m.%y"))
     ]
 
     print(sInfo)
