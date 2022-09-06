@@ -53,10 +53,10 @@ def main():
     ratio = get_forex()
     sInfo = [
         f"{'Calendar week:':<18}" + str(datetime.datetime.now().isocalendar()[1]),
-        f"{'Bitcoins worth:':<18}" + b(get_crypto('BTC')),
+        f"{'Bitcoins worth:':<18}" + "Crypto not avalible",  # b(get_crypto('BTC'))
         f"{'PayPal worth:':<18}" + b(get_open('PYPL')),
         f"{'Apple worth:':<18}" + b(get_open('AAPL')),
-        f"{'Forecast:':<18}" + get_weather(),
+        # f"{'Forecast:':<18}" + get_weather(),
         f"{'Refreshed:':<18}" + str(datetime.datetime.now().strftime("%d.%m.%y"))
     ]
 
